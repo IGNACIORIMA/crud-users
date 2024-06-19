@@ -1,0 +1,84 @@
+.userForm {
+    background-color: #00000085;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s;
+} 
+
+.userForm.active {
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.userForm_form {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 500;
+    min-width: 35%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.userForm_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userForm_header h2 {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.userForm_close {
+    padding: 0 8px;
+    border-radius: 50%;
+}
+
+.userForm_close:hover {
+    background-color: crimson;
+}
+
+
+.userForm_item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.userForm_item label {
+    font-size: large;
+    font-weight: bold;
+}
+
+.userForm_item input {
+    border: 1px solid gray;
+    background-color: #c0c0c0;
+    color: black;
+}
+
+.userForm_btn {
+    background-color: rgb(71, 71, 160);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    transition: transform .5s,
+                filter .5s;
+}
+
+.userForm_btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.25);
+    transition: transform .5s,
+                filter .5s;
+}
